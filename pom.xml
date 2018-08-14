@@ -70,7 +70,7 @@
         <dependency>
             <groupId>com.nhsd.a2si</groupId>
             <artifactId>a2si-capacity-information</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>1.2-SNAPSHOT</version>
         </dependency>
         <!-- Capacity Service Client -->
         <dependency>
@@ -127,14 +127,14 @@
                 </dependencies>
             </plugin>
 
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <argLine>-Dspring.profiles.active=local-dos-stub-cpsc-stub</argLine>
                     <excludes>**/*IntegrationTest*.java</excludes>
                 </configuration>
-            </plugin>
+            </plugin>-->
 
             <plugin>
                 <groupId>com.spotify</groupId>
