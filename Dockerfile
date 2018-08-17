@@ -10,4 +10,6 @@ ENV JAVA_OPTS=""
 RUN ["apk", "update"]
 RUN ["apk", "add", "tzdata"]
 RUN ["ln", "-f", "-s", "/usr/share/zoneinfo/Europe/London", "/etc/localtime"]
-ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar dos-wrapper.jar" ]
+
+#ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar dos-wrapper.jar" ]
+CMD ["tail", "-f", "/dev/null"]
